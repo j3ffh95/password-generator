@@ -15,6 +15,23 @@ const randomFunc = {
   symbol: getRandomSymbol,
 };
 
+// Generate event listener
+generateEl.addEventListener("click", () => {
+  const length = +lengthEL.value;
+  const hasLower = lowercaseEl.checked;
+  const hasUpper = uppercaseEl.checked;
+  const hasNumber = numbersEl.checked;
+  const hasSymbol = symbolsEl.checked;
+
+  resultEl.innerText = generatePassword(
+    hasLower,
+    hasUpper,
+    hasNumber,
+    hasSymbol,
+    length
+  );
+});
+
 // Generator functions
 
 function getRandomLower() {
