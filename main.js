@@ -1,3 +1,13 @@
+// DOM Elements
+const resultEl = document.querySelector("#result"),
+  lengthEL = document.querySelector("#length"),
+  uppercaseEl = document.querySelector("#uppercase"),
+  lowercaseEl = document.querySelector("#lowercase"),
+  numbersEl = document.querySelector("#numbers"),
+  symbolsEl = document.querySelector("#symbols"),
+  generateEl = document.querySelector("#generate"),
+  clipboardEl = document.querySelector("#clipboard");
+
 const randomFunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
